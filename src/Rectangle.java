@@ -1,8 +1,7 @@
-// A Rectangle object represents a rectangle defined by an origin point (bottom left corner), plus width and height.
 public class Rectangle
 {
-  Point ori;
-  Point topRight;
+  Point ori = new Point();
+  Point topRight = new Point();
   int wid;
   int heig;
   public Rectangle(Point one, Point two){
