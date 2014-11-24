@@ -11,8 +11,14 @@ public class Line{
     return length;
   }
   public double slope(){
-    double slope= (begin.y-end.y)/(begin.x-end.x);
-    return slope;
+    if(begin.x-end.x==0){
+      double slope=0.0;
+      return slope;
+    }
+    else{
+      double slope= (begin.y-end.y)/(begin.x-end.x);
+      return slope;
+    }
   }
   public String toString(){
     String x= ("["+begin.toString()+", "+end.toString()+"]");
