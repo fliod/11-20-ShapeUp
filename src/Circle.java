@@ -1,12 +1,7 @@
 import java.lang.Math;
 public class Circle{
-  Point cent = new Point;
+  Point cent = new Point();
   double r;
-  public Circle(){
-    cent.setX(0);
-    cent.setY(0);
-    r =0.0;
-  }
   public Circle(Point begin, Point end){
     r= begin.distance(end);
     cent=begin;
