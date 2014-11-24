@@ -1,5 +1,4 @@
 // A Point object represents a pair of (x, y) coordinates.
-// A Point object represents a pair of (x, y) coordinates.
 public class Point
 {
   int x;
@@ -21,9 +20,9 @@ public class Point
   public String toString(){
     return ("("+x+", "+y+")");
   }
-  public double distanceFromOri(){
-   double distance= java.lang.Math.sqrt((x*x)+(y*y));
-   return distance;
+  public double distanceFromOrigin(){
+   double dist= java.lang.Math.sqrt((x*x)+(y*y));
+   return dist;
   }
   public double distance(Point k){
    double kx=k.x;
