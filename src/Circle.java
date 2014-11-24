@@ -1,15 +1,15 @@
-// A Circle object represents a circle defined by a center point and a radius.
+import java.lang.Math;
 public class Circle{
   Point cent;
   double r;
   public Circle(){
-    center.setX(0);
-    center.setY(0);
+    cent.setX(0);
+    cent.setY(0);
     r =0.0;
   }
   public Circle(Point begin, Point end){
-    radius= begin.distance(end);
-    center=begin;
+    r= begin.distance(end);
+    cent=begin;
   }
   public Circle(Point cent, double r){
     this.cent=cent;
@@ -23,11 +23,11 @@ public class Circle{
     return diam;
   }
   public double circumference(){
-    double circl=(2*Math.pi*r);
+    double circl=(2*Math.PI*r);
     return circl;
   }
   public double area(){
-    double area=Math.pi*(r*r);
+    double area=Math.PI*(r*r);
     return area;
   }
   public String toString(){
