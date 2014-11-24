@@ -1,13 +1,7 @@
 // A Line object represents a line defined by a pair of Points.
 public class Line{
-  Point begin;
-  Point end;
-  public Line(){
-    begin.setX(0);
-    end.setX(0);
-    begin.setY(0);
-    end.setY(0);
-  }
+  Point begin = new Point();
+  Point end = new Point);
   public Line(Point start, Point finish){
     begin=start;
     end=finish;
