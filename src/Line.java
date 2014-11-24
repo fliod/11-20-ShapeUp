@@ -1,7 +1,7 @@
 // A Line object represents a line defined by a pair of Points.
 public class Line{
-  begin = new Point();
-  end = new Point();
+  Point() begin;
+  Point() end;
   public Line(){
     begin.setX(0);
     end.setX(0);
@@ -25,7 +25,7 @@ public class Line{
     return x;
   }
   public void translate(int addx, int addy){
-    start.translate(addx, addy);
+    begin.translate(addx, addy);
     end.translate(addx, addy);
   }
 }
