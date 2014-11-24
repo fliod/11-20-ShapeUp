@@ -1,6 +1,6 @@
 import java.lang.Math;
 public class Circle{
-  Point cent;
+  Point cent = new Point;
   double r;
   public Circle(){
     cent.setX(0);
